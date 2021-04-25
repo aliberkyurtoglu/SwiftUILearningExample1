@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var inputValue:String = ""
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            HStack {
+                VStack {
+                    AImageCard(
+                        leftIcon: "person",
+                        headTitle: "Başlık",
+                        subTitle: "Alt Başlık",
+                        content: "İçerik")
+                        .padding(.bottom)
+                    ATextInput(
+                        label: "E-posta Adresiniz",
+                        placeholder: "Bir e-posta adresi giriniz",
+                        iconName: "eye",
+                        value: $inputValue)
+                    Text("Değer: \(inputValue)")
+                    Spacer()
+                }
+            } .padding()
+        }
     }
 }
 

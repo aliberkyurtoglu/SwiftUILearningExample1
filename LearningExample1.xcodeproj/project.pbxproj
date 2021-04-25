@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2898D592635A3810052F535 /* ATextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2898D582635A3810052F535 /* ATextInput.swift */; };
 		E2BED29426358534000C6506 /* LearningExample1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BED29326358534000C6506 /* LearningExample1App.swift */; };
 		E2BED29626358534000C6506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BED29526358534000C6506 /* ContentView.swift */; };
 		E2BED29826358535000C6506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BED29726358535000C6506 /* Assets.xcassets */; };
 		E2BED29B26358535000C6506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BED29A26358535000C6506 /* Preview Assets.xcassets */; };
+		E2BED2A826358BE3000C6506 /* AImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BED2A726358BE3000C6506 /* AImageCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2898D582635A3810052F535 /* ATextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATextInput.swift; sourceTree = "<group>"; };
 		E2BED29026358534000C6506 /* LearningExample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningExample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BED29326358534000C6506 /* LearningExample1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningExample1App.swift; sourceTree = "<group>"; };
 		E2BED29526358534000C6506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2BED29726358535000C6506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BED29A26358535000C6506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2BED29C26358535000C6506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BED2A726358BE3000C6506 /* AImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AImageCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		E2BED29226358534000C6506 /* LearningExample1 */ = {
 			isa = PBXGroup;
 			children = (
+				E2BED2A326358B99000C6506 /* Components */,
 				E2BED29326358534000C6506 /* LearningExample1App.swift */,
 				E2BED29526358534000C6506 /* ContentView.swift */,
 				E2BED29726358535000C6506 /* Assets.xcassets */,
@@ -67,6 +72,39 @@
 				E2BED29A26358535000C6506 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2BED2A326358B99000C6506 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2BED2A626358BB9000C6506 /* Business */,
+				E2BED2A526358BB0000C6506 /* Composite */,
+				E2BED2A426358BA2000C6506 /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E2BED2A426358BA2000C6506 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E2BED2A726358BE3000C6506 /* AImageCard.swift */,
+				E2898D582635A3810052F535 /* ATextInput.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E2BED2A526358BB0000C6506 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		E2BED2A626358BB9000C6506 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BED2A826358BE3000C6506 /* AImageCard.swift in Sources */,
+				E2898D592635A3810052F535 /* ATextInput.swift in Sources */,
 				E2BED29626358534000C6506 /* ContentView.swift in Sources */,
 				E2BED29426358534000C6506 /* LearningExample1App.swift in Sources */,
 			);
