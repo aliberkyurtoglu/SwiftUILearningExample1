@@ -12,6 +12,7 @@ struct ATextInput: View {
     var label: String? = nil
     var placeholder: String? = nil
     var iconName: String? = nil
+    var onPressIcon: (() -> Void)? = nil
     @Binding var value: String
     
     var body: some View {
@@ -22,8 +23,15 @@ struct ATextInput: View {
                 }
                 HStack {
                     TextField(placeholder ?? "", text:$value).font(.subheadline)
-                    if iconName != nil {
-                        Image(systemName: iconName ?? "").resizable().frame(width: 30, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    if iconName != nil && onPressIcon != nil {
+                        Button(action: onPressIcon ?? {}) {
+                            Image(systemName: iconName ?? "")
+                                .renderingMode(Image.TemplateRenderingMode?.init(Image.TemplateRenderingMode.original))
+                                .resizable()
+                                .frame(width: 30, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                        }
+                        
                     }
                 }
                 .padding()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24AABC32635CA6B0048D47B /* AButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AABC22635CA6B0048D47B /* AButton.swift */; };
+		E24AABC72635D00E0048D47B /* RegisterStep1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AABC62635D00E0048D47B /* RegisterStep1.swift */; };
 		E2898D592635A3810052F535 /* ATextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2898D582635A3810052F535 /* ATextInput.swift */; };
 		E2BED29426358534000C6506 /* LearningExample1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BED29326358534000C6506 /* LearningExample1App.swift */; };
 		E2BED29626358534000C6506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BED29526358534000C6506 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24AABC22635CA6B0048D47B /* AButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AButton.swift; sourceTree = "<group>"; };
+		E24AABC62635D00E0048D47B /* RegisterStep1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep1.swift; sourceTree = "<group>"; };
 		E2898D582635A3810052F535 /* ATextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATextInput.swift; sourceTree = "<group>"; };
 		E2BED29026358534000C6506 /* LearningExample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningExample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BED29326358534000C6506 /* LearningExample1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningExample1App.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E24AABC52635D0020048D47B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E24AABC62635D00E0048D47B /* RegisterStep1.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		E2BED28726358534000C6506 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,7 @@
 		E2BED29226358534000C6506 /* LearningExample1 */ = {
 			isa = PBXGroup;
 			children = (
+				E24AABC52635D0020048D47B /* Screens */,
 				E2BED2A326358B99000C6506 /* Components */,
 				E2BED29326358534000C6506 /* LearningExample1App.swift */,
 				E2BED29526358534000C6506 /* ContentView.swift */,
@@ -89,6 +102,7 @@
 			children = (
 				E2BED2A726358BE3000C6506 /* AImageCard.swift */,
 				E2898D582635A3810052F535 /* ATextInput.swift */,
+				E24AABC22635CA6B0048D47B /* AButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -176,7 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24AABC32635CA6B0048D47B /* AButton.swift in Sources */,
 				E2BED2A826358BE3000C6506 /* AImageCard.swift in Sources */,
+				E24AABC72635D00E0048D47B /* RegisterStep1.swift in Sources */,
 				E2898D592635A3810052F535 /* ATextInput.swift in Sources */,
 				E2BED29626358534000C6506 /* ContentView.swift in Sources */,
 				E2BED29426358534000C6506 /* LearningExample1App.swift in Sources */,
